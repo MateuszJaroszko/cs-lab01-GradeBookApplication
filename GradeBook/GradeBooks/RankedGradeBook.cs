@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GradeBook.Enums;
+using System;
 using System.Text;
 namespace GradeBook.GradeBooks
 {
