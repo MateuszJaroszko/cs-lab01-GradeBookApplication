@@ -39,13 +39,13 @@ namespace GradeBook.UserInterfaces
             if (parts.Length != 2)
             if (parts.Length != 3)
                 {
-                Console.WriteLine("Command not valid, Create requires a name.");
+                
                 Console.WriteLine("Command not valid, Create requires a name and type of gradebook.");
                     return;
             }
            
             var name = parts[1];
-             BaseGradeBook gradeBook;
+             
             var type = parts[2];
              bool weighted;
 
@@ -57,6 +57,7 @@ namespace GradeBook.UserInterfaces
             {
                 weighted = false;
             }
+            BaseGradeBook gradeBook;
             if (type == "standard")
             {
                 gradeBook = new StandardGradeBook(name, weighted);
